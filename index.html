@@ -474,6 +474,67 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2r
 
 
 
+
+<!-- PROTOTYPE SECTION -->
+<section id="prototype" style="background:var(--bg2);padding:5rem 2rem;">
+  <div class="container">
+    <div class="section-eyebrow reveal">Working Prototype</div>
+    <h2 class="section-title reveal">See It in Action</h2>
+    <p class="section-sub reveal">Live demo — ESP32 reads temperature via DHT sensor, GPS maps construction site boundaries, nearest worker is alerted on fall detection. Image segmentation monitors worker activity in real time.</p>
+
+    <div class="reveal" style="max-width:420px;margin:0 auto 3rem;">
+      <div style="position:relative;background:#000;border:1px solid rgba(79,142,247,0.3);border-radius:20px;overflow:hidden;aspect-ratio:9/16;box-shadow:0 40px 80px rgba(0,0,0,0.5),0 0 0 1px rgba(79,142,247,0.15);">
+        <span style="position:absolute;top:12px;left:12px;width:20px;height:20px;border-top:2px solid #4f8ef7;border-left:2px solid #4f8ef7;z-index:2;pointer-events:none;"></span>
+        <span style="position:absolute;top:12px;right:12px;width:20px;height:20px;border-top:2px solid #4f8ef7;border-right:2px solid #4f8ef7;z-index:2;pointer-events:none;"></span>
+        <span style="position:absolute;bottom:12px;left:12px;width:20px;height:20px;border-bottom:2px solid #4f8ef7;border-left:2px solid #4f8ef7;z-index:2;pointer-events:none;"></span>
+        <span style="position:absolute;bottom:12px;right:12px;width:20px;height:20px;border-bottom:2px solid #4f8ef7;border-right:2px solid #4f8ef7;z-index:2;pointer-events:none;"></span>
+        <iframe
+          src="https://www.youtube.com/embed/6RoFCif3JTc?autoplay=0&rel=0&modestbranding=1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:20px;"
+        ></iframe>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:1.5rem;justify-content:center;">
+        <span style="background:rgba(79,142,247,0.1);border:1px solid rgba(79,142,247,0.25);color:#4f8ef7;padding:5px 14px;border-radius:20px;font-size:12px;font-family:'Outfit',sans-serif;font-weight:600;">ESP32</span>
+        <span style="background:rgba(74,222,128,0.1);border:1px solid rgba(74,222,128,0.25);color:#4ade80;padding:5px 14px;border-radius:20px;font-size:12px;font-family:'Outfit',sans-serif;font-weight:600;">DHT Sensor</span>
+        <span style="background:rgba(255,107,53,0.1);border:1px solid rgba(255,107,53,0.25);color:#ff6b35;padding:5px 14px;border-radius:20px;font-size:12px;font-family:'Outfit',sans-serif;font-weight:600;">GPS NEO-6M</span>
+        <span style="background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.25);color:#fbbf24;padding:5px 14px;border-radius:20px;font-size:12px;font-family:'Outfit',sans-serif;font-weight:600;">Arduino SOS</span>
+        <span style="background:rgba(248,113,113,0.1);border:1px solid rgba(248,113,113,0.25);color:#f87171;padding:5px 14px;border-radius:20px;font-size:12px;font-family:'Outfit',sans-serif;font-weight:600;">Image Segmentation</span>
+        <span style="background:rgba(167,139,250,0.1);border:1px solid rgba(167,139,250,0.25);color:#a78bfa;padding:5px 14px;border-radius:20px;font-size:12px;font-family:'Outfit',sans-serif;font-weight:600;">Raspberry Pi</span>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:2rem;">
+      <div class="reveal" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.5rem;border-top:2px solid #4f8ef7;">
+        <div style="font-size:24px;margin-bottom:.75rem;">📡</div>
+        <div style="font-family:'Outfit',sans-serif;font-weight:700;font-size:15px;color:#4f8ef7;margin-bottom:.5rem;">GPS Boundary Mapping</div>
+        <div style="font-size:13px;color:var(--muted2);line-height:1.6;">Maps entire construction site. Nearest worker auto-alerted when fall detected in any zone.</div>
+      </div>
+      <div class="reveal" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.5rem;border-top:2px solid #4ade80;transition-delay:.1s;">
+        <div style="font-size:24px;margin-bottom:.75rem;">🌡️</div>
+        <div style="font-family:'Outfit',sans-serif;font-weight:700;font-size:15px;color:#4ade80;margin-bottom:.5rem;">Live Sensor Readings</div>
+        <div style="font-size:13px;color:var(--muted2);line-height:1.6;">DHT streams real-time temperature and humidity. WBGT calculated on-chip every 30 seconds.</div>
+      </div>
+      <div class="reveal" style="background:var(--card);border:1px solid var(--border);border-radius:16px;padding:1.5rem;border-top:2px solid #f87171;transition-delay:.2s;">
+        <div style="font-size:24px;margin-bottom:.75rem;">👁️</div>
+        <div style="font-family:'Outfit',sans-serif;font-weight:700;font-size:15px;color:#f87171;margin-bottom:.5rem;">Image Segmentation</div>
+        <div style="font-size:13px;color:var(--muted2);line-height:1.6;">Camera monitors worker activity. Detects unsafe postures and flags abnormal behaviour automatically.</div>
+      </div>
+    </div>
+
+    <div class="reveal" style="background:rgba(167,139,250,0.06);border:1px solid rgba(167,139,250,0.2);border-radius:14px;padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:12px;">
+      <span style="font-size:20px;">🚀</span>
+      <div>
+        <div style="font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;color:#a78bfa;margin-bottom:4px;">Next Upgrade — Raspberry Pi + IEEE-485</div>
+        <div style="font-size:13px;color:var(--muted2);line-height:1.6;">Serial communication via IEEE-485 protocol enables faster, more reliable data transfer between helmet sensors and site camera network — unlocking full real-time monitoring at scale.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <footer>
   <div class="footer-logo">Karuna</div>
   <div class="footer-sub">Safety Ecosystem · HACKAP 2026 · Team MeshMess</div>
